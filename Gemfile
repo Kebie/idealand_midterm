@@ -6,6 +6,22 @@ gem 'rails', '4.0.4'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+gem 'thin'
+gem 'devise'
+gem 'haml'
+gem 'bootstrap-sass', '~> 3.1.1'
+gem 'font-awesome-sass'
+
+gem "quiet_assets"
+group :development do
+  gem 'hirb'
+  gem 'awesome_print'
+  gem 'interactive_editor'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
