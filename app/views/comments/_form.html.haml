@@ -1,0 +1,12 @@
+- if @comment.errors.any?
+  %h4 Please fix the following issues
+  .alert.alert-danger
+    %ul
+      - @comment.errors.full_messages.each do |err|
+        %li= err
+= form_for([@idea, @comment]) do |f|
+  .form-group
+    = f.label "Comment"
+    = f.text_area :comment, class: "form-control"
+  .form-group
+    = f.submit class: "btn btn-primary"

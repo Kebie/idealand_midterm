@@ -1,1 +1,8 @@
 %h1 THE IDEAS!!!!!!!
+
+- @ideas.each do |idea|
+  .well
+    %h3 
+      = link_to idea.title, idea
+    %p 
+      = idea.description

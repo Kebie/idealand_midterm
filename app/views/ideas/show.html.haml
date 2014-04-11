@@ -1,0 +1,10 @@
+%h1 
+  = @idea.title
+%p
+  = @idea.description
+
+%h2 Comments
+= render @comments
+
+%h3 Leave a Comment
+= render(:partial => "comments/form")

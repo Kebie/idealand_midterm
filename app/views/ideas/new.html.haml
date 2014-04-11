@@ -1,0 +1,8 @@
+%h1 Add an Idea
+- if @idea.errors.any?
+  %h3.field_with_errors ERRRORSSSSS!!!!!!
+  .alert.alert-danger
+    %ul
+      - @idea.errors.full_messages.each do |m|
+        %li= m
+= render "form"
